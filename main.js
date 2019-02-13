@@ -31,6 +31,7 @@ function dogSearch(){
         getDogImages(numOfDogs);
         $('.dogResults').empty();
         document.getElementById("userForm").reset();
+        
     });
 }
 
