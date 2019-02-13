@@ -29,6 +29,8 @@ function dogSearch(){
         $('.dogResults').empty();
         let numOfDogs = document.getElementById("numOfDogs").value;
         getDogImages(numOfDogs);
+        $('.dogResults').empty();
+        document.getElementById("userForm").reset();
     });
 }
 
