@@ -17,16 +17,13 @@ function getDogImages(imgNum){
 
 function displayDogs(responseJson){
     console.log(responseJson);
-    $('.dogResults').append(
-        `<img src="${responseJson.message}">`
-    )
+    $('.dogResults').append(`<img src="${responseJson.message}">`)
     $('.dogResults').removeClass('hidden');
 }
 
 function dogSearch(){
     $('form').submit(event => {
         event.preventDefault();
-        $('.dogResults').empty();
         let numOfDogs = document.getElementById("numOfDogs").value;
         getDogImages(numOfDogs);
         $('.dogResults').empty();
